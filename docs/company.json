@@ -8,5 +8,5 @@
   "career": ["https://careers.vestas.com"],
   "apiBase": "https://careers.vestas.com",
   "searchPath": "/search/?q=&locationsearch=romania",
-  "scraperFile": "https://github.com/sebiboga/vestas-ceu-romania-srl-nodejs-scraper/actions/workflows/job-seeker-ro-spider.yml"
+  "scraperFile": "https://github.com/peviitor-scrapers/vestas-ceu-romania-srl-nodejs-scraper/actions/workflows/job-seeker-ro-spider.yml"
 }
