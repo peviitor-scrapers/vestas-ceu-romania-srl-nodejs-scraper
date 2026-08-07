@@ -17,7 +17,7 @@ npm test
 
 ## Reporting Issues
 
-Open a [GitHub Issue](https://github.com/sebiboga/epam-systems-international-srl-nodejs-scraper/issues) with:
+Open a [GitHub Issue](https://github.com/sebiboga/vestas-ceu-romania-srl-nodejs-scraper/issues) with:
 - Clear description of the problem
 - Steps to reproduce
 - Expected vs actual behavior

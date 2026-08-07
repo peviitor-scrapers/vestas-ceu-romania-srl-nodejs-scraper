@@ -2,13 +2,13 @@ import { jest } from '@jest/globals';
 import fetch from 'node-fetch';
 
 const API_BASE = 'https://api.peviitor.ro/v1';
-const EPAM_CIF = '33159615';
+const VESTAS_CIF = '23012802';
 
 let HAS_API = false;
 
 async function checkApiAvailability() {
   try {
-    const res = await fetch(`${API_BASE}/scraper/jobs/?cif=${EPAM_CIF}&rows=1`, {
+    const res = await fetch(`${API_BASE}/scraper/jobs/?cif=${VESTAS_CIF}&rows=1`, {
       signal: AbortSignal.timeout(5000)
     });
     return res.ok || res.status === 400;
@@ -46,10 +46,11 @@ function itIfAnaf(name, fn, timeout) {
 }
 
 import companyConfig from '../../scraper/config/company.js';
+import scraperConfig from '../../scraper/config/scraper.js';
 const TEST_CIF = companyConfig.id;
 const TEST_BRAND = companyConfig.brand;
 const COMPANY_NAME = companyConfig.company;
-const EPAM_API_URL = 'https://careers.epam.com/api/jobs/v2/search/careers-i18n?from=0&lang=en&size=5&sortBy=relevance%3Brelocation%3Dasc&websiteLocale=en-us&facets=country%3D8150000000000001155';
+const VESTAS_URL = `${scraperConfig.apiBase}${scraperConfig.searchPath}`;
 
 beforeAll(async () => {
   [HAS_API, HAS_ANAF] = await Promise.all([checkApiAvailability(), checkAnafAvailability()]);
@@ -57,80 +58,63 @@ beforeAll(async () => {
 
 describe('E2E: Full Scraping Pipeline', () => {
 
-  describe('EPAM Careers API — Real Data Fetch', () => {
-    let apiData;
+  describe('Vestas Careers — Real Data Fetch', () => {
+    let html;
 
     beforeAll(async () => {
-      const res = await fetch(EPAM_API_URL, {
+      const res = await fetch(VESTAS_URL, {
         headers: {
           'User-Agent': 'job_seeker_ro_spider',
-          'Accept': 'application/json'
+          'Accept': 'text/html'
         }
       });
-      apiData = await res.json();
-    }, 15000);
+      expect(res.ok).toBe(true);
+      html = await res.text();
+    }, 60000);
 
-    it('should respond with valid job data from EPAM API', () => {
-      expect(apiData.data).toHaveProperty('jobs');
-      expect(Array.isArray(apiData.data.jobs)).toBe(true);
-      expect(apiData.data.jobs.length).toBeGreaterThan(0);
-      expect(apiData.data).toHaveProperty('total');
-      expect(typeof apiData.data.total).toBe('number');
+    it('should respond with valid HTML from Vestas careers', () => {
+      expect(html.length).toBeGreaterThan(0);
+      expect(html).toContain('data-row');
     }, 10000);
 
-    it('should have Romania jobs with expected fields', () => {
-      const job = apiData.data.jobs[0];
-      expect(job).toHaveProperty('uid');
-      expect(job).toHaveProperty('name');
-      expect(typeof job.name).toBe('string');
-      expect(job).toHaveProperty('city');
-    });
-
-    it('should have Romanian country on at least one job', () => {
-      const allCountries = apiData.data.jobs.flatMap(j =>
-        (j.country || []).map(c => c.name?.toLowerCase())
-      );
-      expect(allCountries.length).toBeGreaterThan(0);
-      expect(allCountries.some(c => c === 'romania')).toBe(true);
+    it('should contain job result rows', () => {
+      const rows = html.match(/class="data-row"/g) || [];
+      expect(rows.length).toBeGreaterThan(0);
     });
   });
 
   describe('Parse + Transform Pipeline', () => {
     let index;
-    let apiData;
+    let html;
 
     beforeAll(async () => {
       index = await import('../../scraper/index.js');
-      const res = await fetch(EPAM_API_URL, {
+      const res = await fetch(VESTAS_URL, {
         headers: {
           'User-Agent': 'job_seeker_ro_spider',
-          'Accept': 'application/json'
+          'Accept': 'text/html'
         }
       });
-      apiData = await res.json();
-    }, 15000);
+      html = await res.text();
+    }, 60000);
 
-    it('should parse real EPAM API response into standardized format', () => {
-      const result = index.parseApiJobs(apiData);
+    it('should parse real Vestas HTML response into standardized format', () => {
+      const result = index.parseHtmlJobs(html);
 
       expect(result).toHaveProperty('jobs');
       expect(result).toHaveProperty('total');
       expect(result.jobs.length).toBeGreaterThan(0);
-      expect(result.jobs.length).toBeLessThanOrEqual(5);
 
       const parsed = result.jobs[0];
       expect(parsed).toHaveProperty('url');
-      expect(parsed.url).toMatch(/^https:\/\/careers\.epam\.com\//);
+      expect(parsed.url).toMatch(/^https:\/\/careers\.vestas\.com\//);
       expect(parsed).toHaveProperty('title');
-      expect(parsed).toHaveProperty('workmode');
-      expect(['remote', 'on-site', 'hybrid']).toContain(parsed.workmode);
       expect(parsed).toHaveProperty('location');
       expect(Array.isArray(parsed.location)).toBe(true);
-      expect(parsed).toHaveProperty('tags');
     });
 
     it('should map parsed jobs to job model', () => {
-      const parsed = index.parseApiJobs(apiData);
+      const parsed = index.parseHtmlJobs(html);
       const model = index.mapToJobModel(parsed.jobs[0], TEST_CIF);
 
       expect(model).toHaveProperty('url');
@@ -139,15 +123,15 @@ describe('E2E: Full Scraping Pipeline', () => {
       expect(model).toHaveProperty('cif', TEST_CIF);
       expect(model).toHaveProperty('status', 'scraped');
       expect(model).toHaveProperty('date');
-      expect(model.url).toMatch(/^https:\/\/careers\.epam\.com\//);
+      expect(model.url).toMatch(/^https:\/\/careers\.vestas\.com\//);
     });
 
     it('should transform jobs and filter to Romanian locations', () => {
-      const parsed = index.parseApiJobs(apiData);
+      const parsed = index.parseHtmlJobs(html);
       const jobs = parsed.jobs.map(j => index.mapToJobModel(j, TEST_CIF));
 
       const payload = {
-        source: 'epam.com',
+        source: 'careers.vestas.com',
         company: COMPANY_NAME,
         cif: TEST_CIF,
         jobs
@@ -162,12 +146,11 @@ describe('E2E: Full Scraping Pipeline', () => {
         expect(job).toHaveProperty('location');
         expect(Array.isArray(job.location)).toBe(true);
         expect(job.location.length).toBeGreaterThan(0);
-        expect(job.workmode).toMatch(/^(remote|on-site|hybrid)$/);
       }
     });
 
     it('should produce valid job URLs that are accessible', async () => {
-      const parsed = index.parseApiJobs(apiData);
+      const parsed = index.parseHtmlJobs(html);
 
       for (const job of parsed.jobs.slice(0, 2)) {
         const res = await fetch(job.url, {
@@ -188,15 +171,15 @@ describe('E2E: Full Scraping Pipeline', () => {
       company = await import('../../scraper/company.js');
     });
 
-    itIfAnaf('should find EPAM in ANAF and validate active status', async () => {
+    itIfAnaf('should find VESTAS in ANAF and validate active status', async () => {
       const results = await anaf.searchCompany(TEST_BRAND);
 
-      const epam = results.find(c =>
+      const vestas = results.find(c =>
         c.cui.toString() === TEST_CIF &&
         c.statusLabel === 'Funcțiune'
       );
-      expect(epam).toBeDefined();
-      expect(epam.cui.toString()).toBe(TEST_CIF);
+      expect(vestas).toBeDefined();
+      expect(vestas.cui.toString()).toBe(TEST_CIF);
 
       const anafData = await anaf.getCompanyFromANAF(TEST_CIF);
       expect(anafData).toBeDefined();
@@ -211,7 +194,7 @@ describe('E2E: Full Scraping Pipeline', () => {
       expect(result.cif).toBe(TEST_CIF);
 
       if (result.existingJobsCount === 0) {
-        console.log('⚠️ No EPAM jobs in API — skipping job count assertion');
+        console.log('⚠️ No VESTAS jobs in API — skipping job count assertion');
         return;
       }
       expect(result.existingJobsCount).toBeGreaterThan(0);
@@ -251,11 +234,11 @@ describe('E2E: Full Scraping Pipeline', () => {
       api = await import('../../scraper/api.js');
     });
 
-    itIfApi('should have EPAM jobs in API with correct company name', async () => {
+    itIfApi('should have VESTAS jobs in API with correct company name', async () => {
       const result = await api.querySOLR(TEST_CIF);
 
       if (result.numFound === 0) {
-        console.log('⚠️ No EPAM jobs in API — skipping API data verification');
+        console.log('⚠️ No VESTAS jobs in API — skipping API data verification');
         return;
       }
 
@@ -265,7 +248,7 @@ describe('E2E: Full Scraping Pipeline', () => {
       }
     }, 15000);
 
-    itIfApi('should have EPAM company core entry with required fields', async () => {
+    itIfApi('should have VESTAS company core entry with required fields', async () => {
       const companyDoc = await api.getCompanyByCif(TEST_CIF);
 
       expect(companyDoc).toBeDefined();

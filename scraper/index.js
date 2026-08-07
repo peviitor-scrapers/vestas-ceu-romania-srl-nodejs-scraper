@@ -1,5 +1,6 @@
 import fetch from "node-fetch";
 import fs from "fs";
+import * as cheerio from "cheerio";
 import { fileURLToPath } from "url";
 import { validateAndGetCompany } from "./company.js";
 import { querySOLR, upsertJobs, upsertCompany, deleteJobByUrl } from "./api.js";
@@ -9,14 +10,48 @@ import scraperConfig from "./config/scraper.js";
 
 const COMPANY_CIF = companyConfig.id;
 const JOB_BASE = scraperConfig.apiBase;
-const ROMANIA_COUNTRY_ID = scraperConfig.apiCountryId;
+const CAREER_URL = `${JOB_BASE}${scraperConfig.searchPath}`;
 
 const TIMEOUT = 10000;
-const PAGE_SIZE = 10;
 
 let COMPANY_NAME = null;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+const CITY_MAP = {
+  "barlad": "Bârlad",
+  "bucharest": "București",
+  "bucuresti": "București",
+  "bucurest": "București",
+  "buzau": "Buzău",
+  "constanta": "Constanța",
+  "cluj-napoca": "Cluj-Napoca",
+  "cluj": "Cluj-Napoca",
+  "brasov": "Brașov",
+  "timisoara": "Timișoara",
+  "iasi": "Iași",
+  "sibiu": "Sibiu",
+  "oradea": "Oradea",
+  "romania": "România",
+  "românia": "România"
+};
+
+function canonicalCity(name) {
+  if (!name) return null;
+  return CITY_MAP[name.trim().toLowerCase()] || null;
+}
+
+function extractCities(rawTitle) {
+  if (!rawTitle || !rawTitle.includes("|")) return [];
+  const locationPart = rawTitle.split("|").slice(1).join("|");
+  const found = new Set();
+  for (const key of Object.keys(CITY_MAP)) {
+    if (new RegExp(`\\b${key.replace(/[-\\s]/g, "[-\\s]?")}\\b`, "i").test(locationPart)) {
+      found.add(CITY_MAP[key]);
+    }
+  }
+  return [...found];
+}
 
 async function searchANOFM(cif) {
   const jobs = [];
@@ -59,117 +94,67 @@ async function searchANOFM(cif) {
   return jobs;
 }
 
-async function fetchJobsPage(pageNum) {
-  const from = (pageNum - 1) * PAGE_SIZE;
-  const url = `${JOB_BASE}/api/jobs/v2/search/careers-i18n?from=${from}&lang=en&size=${PAGE_SIZE}&sortBy=relevance%3Brelocation%3Dasc&websiteLocale=en-us&facets=country%3D${ROMANIA_COUNTRY_ID}`;
-
-  const res = await fetch(url, {
+async function fetchJobsHtml() {
+  const res = await fetch(CAREER_URL, {
     headers: {
       "User-Agent": "job_seeker_ro_spider",
-      "Accept": "application/json"
+      "Accept": "text/html"
     }
   });
-
-  if (!res.ok) {
-    throw new Error(`API error ${res.status} for page=${pageNum}`);
-  }
-
-  return await res.json();
+  if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${CAREER_URL}`);
+  return res.text();
 }
 
-function parseApiJobs(apiData) {
-  const jobs = apiData.data?.jobs || [];
-  const total = apiData.data?.total || 0;
+function parseHtmlJobs(html) {
+  const $ = cheerio.load(html);
+  const jobs = [];
 
-  return {
-    jobs: jobs.map(job => {
-      const vacancyType = job.vacancy_type || "Hybrid";
-      let workmode = "hybrid";
-      if (vacancyType.toLowerCase().includes("remote")) workmode = "remote";
-      else if (vacancyType.toLowerCase().includes("office")) workmode = "on-site";
+  $("tr.data-row").each((_, el) => {
+    const $tr = $(el);
+    const $a = $tr.find("a.jobTitle-link").first();
+    const href = ($a.attr("href") || "").trim();
+    const rawTitle = $a.text().trim();
+    if (!rawTitle || !href) return;
 
-      const location = [];
-      if (job.city && job.city.length > 0) {
-        for (const c of job.city) {
-          if (c.name) location.push(c.name);
-        }
-      } else if (job.country?.[0]?.name) {
-        location.push(job.country[0].name);
-      }
+    const cleanTitle = rawTitle.split("|")[0].trim();
+    const url = href.startsWith("http") ? href : `${JOB_BASE}${href.startsWith("/") ? "" : "/"}${href}`;
 
-      const uid = job.uid || "";
-      const seoUrl = job.seo?.url || `/en/vacancy/${uid}_en`;
-      const url = seoUrl.startsWith('http') ? seoUrl : `${JOB_BASE}${seoUrl}`;
+    const cities = [];
+    const locText = $tr.find("td.colLocation span.jobLocation").first().text().trim();
+    if (locText) {
+      const first = locText.split(",")[0].trim();
+      const c = canonicalCity(first);
+      if (c) cities.push(c);
+    }
+    if (cities.length === 0) {
+      cities.push(...extractCities(rawTitle));
+    }
 
-      const tags = (job.skills || []).map(s => s.toLowerCase());
+    const location = cities.length > 0 ? cities : [companyConfig.location[0]];
 
-      return {
-        url,
-        title: job.name,
-        uid: job.uid,
-        workmode,
-        location,
-        tags
-      };
-    }),
-    total
-  };
+    jobs.push({ url, title: cleanTitle, location, tags: [] });
+  });
+
+  return { jobs, total: jobs.length };
 }
 
 async function scrapeAllListings(testOnlyOnePage = false) {
-  const allJobs = [];
-  const seenUrls = new Set();
-  let page = 1;
-  let totalJobs = 0;
-  const MAX_PAGES = 10;
+  console.log(`Fetching ${CAREER_URL}`);
+  const html = await fetchJobsHtml();
+  const { jobs, total } = parseHtmlJobs(html);
 
-  while (true) {
-    console.log(`Fetching API page: ${page}`);
-    const data = await fetchJobsPage(page);
-    const result = parseApiJobs(data);
-    const jobs = result.jobs;
+  console.log(`Total jobs on site: ${total}`);
 
-    if (!jobs.length) {
-      console.log(`No jobs found on page ${page}, stopping.`);
-      break;
+  const seen = new Set();
+  const unique = [];
+  for (const job of jobs) {
+    if (!seen.has(job.url)) {
+      seen.add(job.url);
+      unique.push(job);
     }
-
-    if (page === 1) {
-      totalJobs = result.total;
-      console.log(`Total jobs on site: ${totalJobs}`);
-    }
-
-    let newJobs = 0;
-    for (const job of jobs) {
-      if (!seenUrls.has(job.url)) {
-        seenUrls.add(job.url);
-        allJobs.push(job);
-        newJobs++;
-      }
-    }
-    console.log(`Page ${page}: ${jobs.length} jobs, ${newJobs} new (total: ${allJobs.length})`);
-
-    if (testOnlyOnePage) {
-      console.log("Test mode: stopping after page 1.");
-      break;
-    }
-
-    if (page >= MAX_PAGES) {
-      console.log(`Max pages (${MAX_PAGES}) reached, stopping.`);
-      break;
-    }
-
-    if (newJobs === 0) {
-      console.log(`No new jobs on page ${page}, stopping.`);
-      break;
-    }
-
-    page += 1;
-    await sleep(1000);
   }
-
-  console.log(`Total unique jobs collected: ${allJobs.length}`);
-  return allJobs;
+  console.log(`Total unique jobs collected: ${unique.length}`);
+  return unique;
 }
 
 function mapToJobModel(rawJob, cif, companyName = COMPANY_NAME) {
@@ -200,7 +185,7 @@ function transformJobsForSOLR(payload) {
     'Târgu Mureș', 'Targu Mures', 'Oradea', 'Baia Mare', 'Satu Mare',
     'Ploiești', 'Ploiesti', 'Pitești', 'Pitesti', 'Arad', 'Galați', 'Galati',
     'Brăila', 'Braila', 'Drobeta-Turnu Severin', 'Râmnicu Vâlcea', 'Ramnicu Valcea',
-    'Buzău', 'Buzau', 'Botoșani', 'Botosani', 'Zalău', 'Zalau', 'Hunedoara', 'Deva',
+    'Buzău', 'Buzau', 'Bârlad', 'Barlad', 'Botoșani', 'Botosani', 'Zalău', 'Zalau', 'Hunedoara', 'Deva',
     'Suceava', 'Bistrița', 'Bistrita', 'Tulcea', 'Călărași', 'Calarasi',
     'Giurgiu', 'Alba Iulia', 'Slatina', 'Piatra Neamț', 'Piatra Neamt', 'Roman',
     'Dumbrăvița', 'Dumbravita', 'Voluntari', 'Popești-Leordeni', 'Popesti-Leordeni',
@@ -279,7 +264,7 @@ async function main() {
 
     const rawJobs = await scrapeAllListings(testOnlyOnePage);
     const scrapedCount = rawJobs.length;
-    console.log(`Jobs scraped from EPAM Careers website: ${scrapedCount}`);
+    console.log(`Jobs scraped from careers.vestas.com website: ${scrapedCount}`);
 
     if (!testOnlyOnePage) {
       const anofmJobs = await searchANOFM(cif);
@@ -295,7 +280,7 @@ async function main() {
     const jobs = rawJobs.map(job => mapToJobModel(job, cif));
 
     const payload = {
-      source: "epam.com",
+      source: "careers.vestas.com",
       scrapedAt: new Date().toISOString(),
       company: COMPANY_NAME,
       cif: cif,
@@ -357,7 +342,7 @@ async function main() {
     const finalResult = await querySOLR(COMPANY_CIF);
     console.log(`\n=== SUMMARY ===`);
     console.log(`Jobs existing in SOLR before scrape: ${existingCount}`);
-    console.log(`Jobs scraped from EPAM website: ${scrapedCount}`);
+    console.log(`Jobs scraped from careers.vestas.com: ${scrapedCount}`);
     console.log(`Stale jobs attempted: ${staleUrls.length}`);
     console.log(`Jobs in SOLR after scrape: ${finalResult.numFound}`);
     console.log(`====================`);
@@ -371,7 +356,7 @@ async function main() {
   }
 }
 
-export { parseApiJobs, mapToJobModel, transformJobsForSOLR };
+export { parseHtmlJobs, mapToJobModel, transformJobsForSOLR };
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   main();

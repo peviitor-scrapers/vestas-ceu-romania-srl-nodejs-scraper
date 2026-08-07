@@ -1,4 +1,4 @@
 {
-  "apiBase": "https://careers.epam.com",
-  "apiCountryId": "8150000000000001155"
+  "apiBase": "https://careers.vestas.com",
+  "searchPath": "/search/?q=&locationsearch=romania"
 }
