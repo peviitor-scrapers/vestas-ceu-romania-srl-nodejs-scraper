@@ -10,17 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-08-08 |
+| Last Scraped | 2026-08-09 |
 
 ## Current Job Listings (9)
 
-_Generated: 2026-08-08T06:59:53.072Z_
-
-### Site Manager
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
-- **Location:** București
-- **Status:** scraped
+_Generated: 2026-08-09T07:02:29.874Z_
 
 ### Service Technician
 
@@ -38,6 +32,12 @@ _Generated: 2026-08-08T06:59:53.072Z_
 
 - **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
 - **Location:** Bârlad
+- **Status:** scraped
+
+### Site Manager
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
+- **Location:** București
 - **Status:** scraped
 
 ### Sales Manager
