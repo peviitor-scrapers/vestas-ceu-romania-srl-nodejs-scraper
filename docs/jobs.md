@@ -1,4 +1,4 @@
-# VESTAS CEU ROMANIA SRL
+# VESTAS CEU ROMANIA S.R.L.
 
 ## Company Info
 
@@ -7,19 +7,19 @@
 | CIF | 23012802 |
 | Brand | VESTAS |
 | Status | activ |
-| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
+| Location | București |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-08-09 |
+| Last Scraped | 2026-08-10 |
 
 ## Current Job Listings (9)
 
-_Generated: 2026-08-09T07:02:29.874Z_
+_Generated: 2026-08-10T07:49:13.629Z_
 
-### Service Technician
+### Site Manager
 
-- **URL:** [https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/](https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/)
-- **Location:** Bârlad
+- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
+- **Location:** București
 - **Status:** scraped
 
 ### Installation Supervisor
@@ -28,16 +28,16 @@ _Generated: 2026-08-09T07:02:29.874Z_
 - **Location:** București
 - **Status:** scraped
 
+### Service Technician
+
+- **URL:** [https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/](https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/)
+- **Location:** Bârlad
+- **Status:** scraped
+
 ### Field Supervisor
 
 - **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
 - **Location:** Bârlad
-- **Status:** scraped
-
-### Site Manager
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
-- **Location:** București
 - **Status:** scraped
 
 ### Sales Manager
