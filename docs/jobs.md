@@ -10,23 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-08-11 |
+| Last Scraped | 2026-08-12 |
 
 ## Current Job Listings (9)
 
-_Generated: 2026-08-11T07:14:06.677Z_
-
-### Service Technician
-
-- **URL:** [https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/](https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/)
-- **Location:** Bârlad
-- **Status:** scraped
-
-### Installation Supervisor
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/](https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/)
-- **Location:** București
-- **Status:** scraped
+_Generated: 2026-08-12T07:39:07.795Z_
 
 ### Site Manager
 
@@ -34,10 +22,22 @@ _Generated: 2026-08-11T07:14:06.677Z_
 - **Location:** București
 - **Status:** scraped
 
+### Service Technician
+
+- **URL:** [https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/](https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/)
+- **Location:** Bârlad
+- **Status:** scraped
+
 ### Field Supervisor
 
 - **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
 - **Location:** Bârlad
+- **Status:** scraped
+
+### Installation Supervisor
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/](https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/)
+- **Location:** București
 - **Status:** scraped
 
 ### Sub-Regional HSE Manager- Eastern Europe, Middle East & Africa
