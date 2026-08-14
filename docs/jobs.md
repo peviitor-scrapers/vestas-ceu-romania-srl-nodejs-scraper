@@ -1,4 +1,4 @@
-# VESTAS CEU ROMANIA S.R.L.
+# VESTAS CEU ROMANIA SRL
 
 ## Company Info
 
@@ -7,20 +7,14 @@
 | CIF | 23012802 |
 | Brand | VESTAS |
 | Status | activ |
-| Location | București |
+| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-08-13 |
+| Last Scraped | 2026-08-14 |
 
 ## Current Job Listings (9)
 
-_Generated: 2026-08-13T07:40:45.179Z_
-
-### Field Supervisor
-
-- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
-- **Location:** Bârlad
-- **Status:** scraped
+_Generated: 2026-08-14T07:38:25.832Z_
 
 ### Site Manager
 
@@ -34,21 +28,27 @@ _Generated: 2026-08-13T07:40:45.179Z_
 - **Location:** București
 - **Status:** scraped
 
+### Field Supervisor
+
+- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
+- **Location:** Bârlad
+- **Status:** scraped
+
 ### Service Technician
 
 - **URL:** [https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/](https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/)
 - **Location:** Bârlad
 - **Status:** scraped
 
-### Sub-Regional HSE Manager- Eastern Europe, Middle East & Africa
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Sub-Regional-HSE-Manager-Eastern-Europe%2C-Middle-East-&-Africa-Bucu-12095/1410353833/](https://careers.vestas.com/job/Bucharest-Sub-Regional-HSE-Manager-Eastern-Europe%2C-Middle-East-&-Africa-Bucu-12095/1410353833/)
-- **Location:** București
-- **Status:** scraped
-
 ### Sales Manager
 
 - **URL:** [https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/](https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/)
+- **Location:** București
+- **Status:** scraped
+
+### Sub-Regional HSE Manager- Eastern Europe, Middle East & Africa
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Sub-Regional-HSE-Manager-Eastern-Europe%2C-Middle-East-&-Africa-Bucu-12095/1410353833/](https://careers.vestas.com/job/Bucharest-Sub-Regional-HSE-Manager-Eastern-Europe%2C-Middle-East-&-Africa-Bucu-12095/1410353833/)
 - **Location:** București
 - **Status:** scraped
 
