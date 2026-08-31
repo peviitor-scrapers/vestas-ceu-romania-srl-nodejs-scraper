@@ -10,16 +10,22 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-08-30 |
+| Last Scraped | 2026-08-31 |
 
-## Current Job Listings (8)
+## Current Job Listings (7)
 
-_Generated: 2026-08-30T11:35:02.699Z_
+_Generated: 2026-08-31T13:10:10.997Z_
 
 ### Site Manager
 
 - **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
 - **Location:** București
+- **Status:** scraped
+
+### Field Supervisor
+
+- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
+- **Location:** Bârlad
 - **Status:** scraped
 
 ### Installation Supervisor
@@ -31,12 +37,6 @@ _Generated: 2026-08-30T11:35:02.699Z_
 ### Service Technician
 
 - **URL:** [https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/](https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/)
-- **Location:** Bârlad
-- **Status:** scraped
-
-### Field Supervisor
-
-- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
 - **Location:** Bârlad
 - **Status:** scraped
 
@@ -55,11 +55,5 @@ _Generated: 2026-08-30T11:35:02.699Z_
 ### Turbine Service Technician - Buzau Area
 
 - **URL:** [https://careers.vestas.com/job/Buzau%2C-Com-Caragele-Turbine-Service-Technician-Buzau-Area-Cons/1412206433/](https://careers.vestas.com/job/Buzau%2C-Com-Caragele-Turbine-Service-Technician-Buzau-Area-Cons/1412206433/)
-- **Location:** Buzău
-- **Status:** scraped
-
-### Dispatcher
-
-- **URL:** [https://careers.vestas.com/job/Buzau%2C-Com-Caragele-Dispatcher-Cons-127316/1419701433/](https://careers.vestas.com/job/Buzau%2C-Com-Caragele-Dispatcher-Cons-127316/1419701433/)
 - **Location:** Buzău
 - **Status:** scraped
