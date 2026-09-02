@@ -10,21 +10,21 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-09-01 |
+| Last Scraped | 2026-09-02 |
 
 ## Current Job Listings (7)
 
-_Generated: 2026-09-01T11:22:51.645Z_
+_Generated: 2026-09-02T10:56:43.425Z_
 
-### Field Supervisor
+### Installation Coordinator
 
-- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
-- **Location:** Bârlad
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
+- **Location:** București
 - **Status:** scraped
 
-### Site Manager
+### Service Technician\_Entry Level
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
+- **URL:** [https://careers.vestas.com/job/Galati-Service-Technician_Entry-Level-Gala/1432825933/](https://careers.vestas.com/job/Galati-Service-Technician_Entry-Level-Gala/1432825933/)
 - **Location:** București
 - **Status:** scraped
 
@@ -40,16 +40,16 @@ _Generated: 2026-09-01T11:22:51.645Z_
 - **Location:** București
 - **Status:** scraped
 
-### Sales Manager
+### Site Manager
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/](https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/)
+- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
 - **Location:** București
 - **Status:** scraped
 
-### Sub-Regional HSE Manager- Eastern Europe, Middle East & Africa
+### Field Supervisor
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Sub-Regional-HSE-Manager-Eastern-Europe%2C-Middle-East-&-Africa-Bucu-12095/1410353833/](https://careers.vestas.com/job/Bucharest-Sub-Regional-HSE-Manager-Eastern-Europe%2C-Middle-East-&-Africa-Bucu-12095/1410353833/)
-- **Location:** București
+- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
+- **Location:** Bârlad
 - **Status:** scraped
 
 ### Turbine Service Technician - Buzau Area
