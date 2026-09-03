@@ -10,11 +10,11 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-09-02 |
+| Last Scraped | 2026-09-03 |
 
-## Current Job Listings (7)
+## Current Job Listings (6)
 
-_Generated: 2026-09-02T10:56:43.425Z_
+_Generated: 2026-09-03T10:55:44.210Z_
 
 ### Installation Coordinator
 
@@ -22,16 +22,10 @@ _Generated: 2026-09-02T10:56:43.425Z_
 - **Location:** București
 - **Status:** scraped
 
-### Service Technician\_Entry Level
+### Site Manager
 
-- **URL:** [https://careers.vestas.com/job/Galati-Service-Technician_Entry-Level-Gala/1432825933/](https://careers.vestas.com/job/Galati-Service-Technician_Entry-Level-Gala/1432825933/)
+- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
 - **Location:** București
-- **Status:** scraped
-
-### Service Technician
-
-- **URL:** [https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/](https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/)
-- **Location:** Bârlad
 - **Status:** scraped
 
 ### Installation Supervisor
@@ -40,10 +34,10 @@ _Generated: 2026-09-02T10:56:43.425Z_
 - **Location:** București
 - **Status:** scraped
 
-### Site Manager
+### Service Technician
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
-- **Location:** București
+- **URL:** [https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/](https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/)
+- **Location:** Bârlad
 - **Status:** scraped
 
 ### Field Supervisor
