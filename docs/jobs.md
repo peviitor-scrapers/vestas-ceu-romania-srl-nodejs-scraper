@@ -10,16 +10,22 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-10-03 |
+| Last Scraped | 2026-10-04 |
 
 ## Current Job Listings (8)
 
-_Generated: 2026-10-03T11:20:55.071Z_
+_Generated: 2026-10-04T12:01:54.977Z_
 
-### Area Supervisor Service - Galati
+### Installation Coordinator
 
-- **URL:** [https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/](https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/)
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
 - **Location:** București
+- **Status:** scraped
+
+### Field Supervisor
+
+- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
+- **Location:** Bârlad
 - **Status:** scraped
 
 ### Installation Supervisor
@@ -40,16 +46,10 @@ _Generated: 2026-10-03T11:20:55.071Z_
 - **Location:** Bârlad
 - **Status:** scraped
 
-### Installation Coordinator
+### Area Supervisor Service - Galati
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
+- **URL:** [https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/](https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/)
 - **Location:** București
-- **Status:** scraped
-
-### Field Supervisor
-
-- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
-- **Location:** Bârlad
 - **Status:** scraped
 
 ### Customer Management Professional
