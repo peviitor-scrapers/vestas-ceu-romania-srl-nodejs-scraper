@@ -10,21 +10,15 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-10-09 |
+| Last Scraped | 2026-10-10 |
 
-## Current Job Listings (8)
+## Current Job Listings (9)
 
-_Generated: 2026-10-09T12:52:29.811Z_
+_Generated: 2026-10-10T12:10:28.638Z_
 
-### Installation Coordinator
+### Service Technician
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
-- **Location:** București
-- **Status:** scraped
-
-### Field Supervisor
-
-- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
+- **URL:** [https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/](https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/)
 - **Location:** Bârlad
 - **Status:** scraped
 
@@ -34,15 +28,21 @@ _Generated: 2026-10-09T12:52:29.811Z_
 - **Location:** București
 - **Status:** scraped
 
-### Service Technician
+### Field Supervisor
 
-- **URL:** [https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/](https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-VS/1285921101/)
+- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
 - **Location:** Bârlad
 - **Status:** scraped
 
 ### Site Manager
 
 - **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
+- **Location:** București
+- **Status:** scraped
+
+### Installation Coordinator
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
 - **Location:** București
 - **Status:** scraped
 
@@ -55,6 +55,12 @@ _Generated: 2026-10-09T12:52:29.811Z_
 ### Customer Management Professional
 
 - **URL:** [https://careers.vestas.com/job/Bucharest-Customer-Management-Professional-Bucu-12095/1441054633/](https://careers.vestas.com/job/Bucharest-Customer-Management-Professional-Bucu-12095/1441054633/)
+- **Location:** București
+- **Status:** scraped
+
+### Sales Manager
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/](https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/)
 - **Location:** București
 - **Status:** scraped
 
