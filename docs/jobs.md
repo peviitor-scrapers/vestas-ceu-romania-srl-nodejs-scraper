@@ -10,28 +10,22 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-10-18 |
+| Last Scraped | 2026-10-19 |
 
-## Current Job Listings (9)
+## Current Job Listings (8)
 
-_Generated: 2026-10-18T10:40:09.830Z_
+_Generated: 2026-10-19T12:38:28.561Z_
+
+### Installation Supervisor
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/](https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/)
+- **Location:** București
+- **Status:** scraped
 
 ### Area Supervisor Service - Galati
 
 - **URL:** [https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/](https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/)
 - **Location:** București
-- **Status:** scraped
-
-### Service Technician Barlad Area
-
-- **URL:** [https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-Area-VS/1285921101/](https://careers.vestas.com/job/Barlad-Service-Technician-Barlad-Area-VS/1285921101/)
-- **Location:** Bârlad
-- **Status:** scraped
-
-### Field Supervisor
-
-- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
-- **Location:** Bârlad
 - **Status:** scraped
 
 ### Site Manager
@@ -46,10 +40,10 @@ _Generated: 2026-10-18T10:40:09.830Z_
 - **Location:** București
 - **Status:** scraped
 
-### Installation Supervisor
+### Field Supervisor
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/](https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/)
-- **Location:** București
+- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
+- **Location:** Bârlad
 - **Status:** scraped
 
 ### Sales Manager
