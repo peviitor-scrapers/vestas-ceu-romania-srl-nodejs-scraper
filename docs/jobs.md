@@ -10,11 +10,17 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-11-06 |
+| Last Scraped | 2026-11-07 |
 
 ## Current Job Listings (9)
 
-_Generated: 2026-11-06T13:58:29.296Z_
+_Generated: 2026-11-07T12:42:36.870Z_
+
+### Installation Coordinator
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
+- **Location:** București
+- **Status:** scraped
 
 ### Site Manager
 
@@ -22,15 +28,9 @@ _Generated: 2026-11-06T13:58:29.296Z_
 - **Location:** București
 - **Status:** scraped
 
-### Area Supervisor Service - Galati
+### Installation Supervisor
 
-- **URL:** [https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/](https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/)
-- **Location:** București
-- **Status:** scraped
-
-### Installation Coordinator
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/](https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/)
 - **Location:** București
 - **Status:** scraped
 
@@ -40,9 +40,9 @@ _Generated: 2026-11-06T13:58:29.296Z_
 - **Location:** Bârlad
 - **Status:** scraped
 
-### Installation Supervisor
+### Area Supervisor Service - Galati
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/](https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/)
+- **URL:** [https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/](https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/)
 - **Location:** București
 - **Status:** scraped
 
