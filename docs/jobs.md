@@ -10,15 +10,15 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-11-08 |
+| Last Scraped | 2026-11-09 |
 
 ## Current Job Listings (9)
 
-_Generated: 2026-11-08T12:59:43.096Z_
+_Generated: 2026-11-09T15:40:59.580Z_
 
-### Site Manager
+### Installation Coordinator
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
 - **Location:** București
 - **Status:** scraped
 
@@ -28,33 +28,33 @@ _Generated: 2026-11-08T12:59:43.096Z_
 - **Location:** București
 - **Status:** scraped
 
-### Installation Coordinator
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
-- **Location:** București
-- **Status:** scraped
-
-### Field Supervisor
-
-- **URL:** [https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/](https://careers.vestas.com/job/Barlad-Field-Supervisor-Barlad-VS/1376537733/)
-- **Location:** Bârlad
-- **Status:** scraped
-
 ### Area Supervisor Service - Galati
 
 - **URL:** [https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/](https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/)
 - **Location:** București
 - **Status:** scraped
 
-### Sales Manager
+### Site Manager
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/](https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/)
+- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
 - **Location:** București
+- **Status:** scraped
+
+### Area Supervisor
+
+- **URL:** [https://careers.vestas.com/job/Barlad-Area-Supervisor-VS/1376537733/](https://careers.vestas.com/job/Barlad-Area-Supervisor-VS/1376537733/)
+- **Location:** Bârlad
 - **Status:** scraped
 
 ### Customer Management Professional
 
 - **URL:** [https://careers.vestas.com/job/Bucharest-Customer-Management-Professional-Bucu-12095/1441054633/](https://careers.vestas.com/job/Bucharest-Customer-Management-Professional-Bucu-12095/1441054633/)
+- **Location:** București
+- **Status:** scraped
+
+### Sales Manager
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/](https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/)
 - **Location:** București
 - **Status:** scraped
 
