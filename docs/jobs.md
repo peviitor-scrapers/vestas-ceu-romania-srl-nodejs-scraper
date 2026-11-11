@@ -10,11 +10,17 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-11-10 |
+| Last Scraped | 2026-11-11 |
 
-## Current Job Listings (9)
+## Current Job Listings (8)
 
-_Generated: 2026-11-10T14:35:54.970Z_
+_Generated: 2026-11-11T13:50:31.614Z_
+
+### Installation Coordinator
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
+- **Location:** București
+- **Status:** scraped
 
 ### Site Manager
 
@@ -26,18 +32,6 @@ _Generated: 2026-11-10T14:35:54.970Z_
 
 - **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/](https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/)
 - **Location:** București
-- **Status:** scraped
-
-### Installation Coordinator
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
-- **Location:** București
-- **Status:** scraped
-
-### Area Supervisor
-
-- **URL:** [https://careers.vestas.com/job/Barlad-Area-Supervisor-VS/1376537733/](https://careers.vestas.com/job/Barlad-Area-Supervisor-VS/1376537733/)
-- **Location:** Bârlad
 - **Status:** scraped
 
 ### Area Supervisor Service - Galati
