@@ -10,11 +10,17 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-11-12 |
+| Last Scraped | 2026-11-13 |
 
 ## Current Job Listings (8)
 
-_Generated: 2026-11-12T14:53:12.682Z_
+_Generated: 2026-11-13T14:17:25.311Z_
+
+### Installation Supervisor
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/](https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/)
+- **Location:** București
+- **Status:** scraped
 
 ### Site Manager
 
@@ -25,12 +31,6 @@ _Generated: 2026-11-12T14:53:12.682Z_
 ### Area Supervisor Service - Galati
 
 - **URL:** [https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/](https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/)
-- **Location:** București
-- **Status:** scraped
-
-### Installation Supervisor
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/](https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/)
 - **Location:** București
 - **Status:** scraped
 
