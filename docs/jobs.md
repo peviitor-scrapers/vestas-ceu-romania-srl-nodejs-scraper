@@ -14,7 +14,7 @@
 
 ## Current Job Listings (8)
 
-_Generated: 2026-11-14T13:14:20.495Z_
+_Generated: 2026-11-14T15:07:34.291Z_
 
 ### Special Task Coordinator
 
