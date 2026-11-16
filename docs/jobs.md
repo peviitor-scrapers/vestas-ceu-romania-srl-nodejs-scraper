@@ -1,4 +1,4 @@
-# VESTAS CEU ROMANIA SRL
+# VESTAS CEU ROMANIA S.R.L.
 
 ## Company Info
 
@@ -7,18 +7,18 @@
 | CIF | 23012802 |
 | Brand | VESTAS |
 | Status | activ |
-| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
+| Location | București |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-11-15 |
+| Last Scraped | 2026-11-16 |
 
 ## Current Job Listings (8)
 
-_Generated: 2026-11-15T13:42:19.615Z_
+_Generated: 2026-11-16T15:16:04.040Z_
 
-### Special Task Coordinator
+### Installation Coordinator
 
-- **URL:** [https://careers.vestas.com/job/Galati-Special-Task-Coordinator-Gala-800198/1452630233/](https://careers.vestas.com/job/Galati-Special-Task-Coordinator-Gala-800198/1452630233/)
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
 - **Location:** București
 - **Status:** scraped
 
@@ -28,27 +28,15 @@ _Generated: 2026-11-15T13:42:19.615Z_
 - **Location:** București
 - **Status:** scraped
 
-### Installation Supervisor
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/](https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/)
-- **Location:** București
-- **Status:** scraped
-
 ### Site Manager
 
 - **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
 - **Location:** București
 - **Status:** scraped
 
-### Installation Coordinator
+### Installation Supervisor
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
-- **Location:** București
-- **Status:** scraped
-
-### Customer Management Professional
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Customer-Management-Professional-Bucu-12095/1441054633/](https://careers.vestas.com/job/Bucharest-Customer-Management-Professional-Bucu-12095/1441054633/)
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/](https://careers.vestas.com/job/Bucharest-Installation-Supervisor-Romania-Bucu/1388927533/)
 - **Location:** București
 - **Status:** scraped
 
@@ -58,8 +46,20 @@ _Generated: 2026-11-15T13:42:19.615Z_
 - **Location:** București
 - **Status:** scraped
 
+### Customer Management Professional
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Customer-Management-Professional-Bucu-12095/1441054633/](https://careers.vestas.com/job/Bucharest-Customer-Management-Professional-Bucu-12095/1441054633/)
+- **Location:** București
+- **Status:** scraped
+
 ### Turbine Service Technician
 
 - **URL:** [https://careers.vestas.com/job/Buzau%2C-Com-Caragele-Turbine-Service-Technician-Buzau-Cons/1446608333/](https://careers.vestas.com/job/Buzau%2C-Com-Caragele-Turbine-Service-Technician-Buzau-Cons/1446608333/)
 - **Location:** Buzău
+- **Status:** scraped
+
+### Special Task Coordinator
+
+- **URL:** [https://careers.vestas.com/job/Galati-Special-Task-Coordinator-Gala-800198/1452630233/](https://careers.vestas.com/job/Galati-Special-Task-Coordinator-Gala-800198/1452630233/)
+- **Location:** București
 - **Status:** scraped
