@@ -1,4 +1,4 @@
-# VESTAS CEU ROMANIA S.R.L.
+# VESTAS CEU ROMANIA SRL
 
 ## Company Info
 
@@ -7,30 +7,18 @@
 | CIF | 23012802 |
 | Brand | VESTAS |
 | Status | activ |
-| Location | București |
+| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-11-16 |
+| Last Scraped | 2026-11-17 |
 
-## Current Job Listings (8)
+## Current Job Listings (7)
 
-_Generated: 2026-11-16T15:16:04.040Z_
-
-### Installation Coordinator
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
-- **Location:** București
-- **Status:** scraped
+_Generated: 2026-11-17T15:43:13.904Z_
 
 ### Area Supervisor Service - Galati
 
 - **URL:** [https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/](https://careers.vestas.com/job/Galati-Area-Supervisor-Service-Galati-Gala/1439543633/)
-- **Location:** București
-- **Status:** scraped
-
-### Site Manager
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
 - **Location:** București
 - **Status:** scraped
 
@@ -40,15 +28,21 @@ _Generated: 2026-11-16T15:16:04.040Z_
 - **Location:** București
 - **Status:** scraped
 
-### Sales Manager
+### Installation Coordinator
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/](https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/)
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
 - **Location:** București
 - **Status:** scraped
 
-### Customer Management Professional
+### Site Manager
 
-- **URL:** [https://careers.vestas.com/job/Bucharest-Customer-Management-Professional-Bucu-12095/1441054633/](https://careers.vestas.com/job/Bucharest-Customer-Management-Professional-Bucu-12095/1441054633/)
+- **URL:** [https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/](https://careers.vestas.com/job/Bucharest-Site-Manager-Romania-Bucu/1395165533/)
+- **Location:** București
+- **Status:** scraped
+
+### Sales Manager
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/](https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/)
 - **Location:** București
 - **Status:** scraped
 
