@@ -10,11 +10,23 @@
 | Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-11-18 |
+| Last Scraped | 2026-11-19 |
 
 ## Current Job Listings (7)
 
-_Generated: 2026-11-18T15:23:09.561Z_
+_Generated: 2026-11-19T15:29:21.675Z_
+
+### Installation Coordinator
+
+- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
+- **Location:** București
+- **Status:** scraped
+
+### Special Task Coordinator
+
+- **URL:** [https://careers.vestas.com/job/Galati-Special-Task-Coordinator-Gala-800198/1452630233/](https://careers.vestas.com/job/Galati-Special-Task-Coordinator-Gala-800198/1452630233/)
+- **Location:** București
+- **Status:** scraped
 
 ### Installation Supervisor
 
@@ -34,12 +46,6 @@ _Generated: 2026-11-18T15:23:09.561Z_
 - **Location:** București
 - **Status:** scraped
 
-### Installation Coordinator
-
-- **URL:** [https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/](https://careers.vestas.com/job/Bucharest-Installation-Coordinator-Bucu/1432786333/)
-- **Location:** București
-- **Status:** scraped
-
 ### Sales Manager
 
 - **URL:** [https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/](https://careers.vestas.com/job/Bucharest-Sales-Manager-Bucu-12095/1398848633/)
@@ -50,10 +56,4 @@ _Generated: 2026-11-18T15:23:09.561Z_
 
 - **URL:** [https://careers.vestas.com/job/Buzau%2C-Com-Caragele-Turbine-Service-Technician-Buzau-Cons/1446608333/](https://careers.vestas.com/job/Buzau%2C-Com-Caragele-Turbine-Service-Technician-Buzau-Cons/1446608333/)
 - **Location:** Buzău
-- **Status:** scraped
-
-### Special Task Coordinator
-
-- **URL:** [https://careers.vestas.com/job/Galati-Special-Task-Coordinator-Gala-800198/1452630233/](https://careers.vestas.com/job/Galati-Special-Task-Coordinator-Gala-800198/1452630233/)
-- **Location:** București
 - **Status:** scraped
