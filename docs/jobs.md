@@ -1,4 +1,4 @@
-# VESTAS CEU ROMANIA SRL
+# VESTAS CEU ROMANIA S.R.L.
 
 ## Company Info
 
@@ -7,11 +7,11 @@
 | CIF | 23012802 |
 | Brand | VESTAS |
 | Status | activ |
-| Location | MUNICIPIUL BUCUREŞTI, SECTOR 1, STR AVIATOR POPISTEANU, NR.54A, CLADIREA 1, ET.1 |
+| Location | București |
 | Website | [https://www.vestas.com](https://www.vestas.com) |
 | Careers | [https://careers.vestas.com](https://careers.vestas.com) |
-| Last Scraped | 2026-11-26 |
+| Last Scraped | 2026-11-27 |
 
 ## Current Job Listings (0)
 
-_Generated: 2026-11-26T16:37:57.446Z_
+_Generated: 2026-11-27T16:23:18.427Z_
